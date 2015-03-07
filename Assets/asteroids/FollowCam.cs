@@ -31,7 +31,7 @@ public class FollowCam : MonoBehaviour {
 		//target_vel = to_follow.GetComponent<Rigidbody>().velocity;
  		// punt on the cam intercept stuff
 		tx.position = target_pos;
-		target_size = 5+to_follow.GetComponent<Rigidbody>().velocity.magnitude;
+		target_size = 10+to_follow.GetComponent<Rigidbody>().velocity.magnitude;
 		cam.orthographicSize+=(target_size-cam.orthographicSize)/2;
 
 	}
